@@ -1,4 +1,4 @@
-"use strict";
+ï»¿"use strict";
 
 const express = require("express");
 const bodyParser = require("body-parser");
@@ -24,14 +24,15 @@ restService.post("/echo", function(req, res) {
   if(richiesta =="Seems like some problem. Speak again.")
   {
 	  speech ="Seems like some problem. Speak again."
-  }
-  if(richiesta =="lista ristoranti")
+  }else if(richiesta =="lista ristoranti")
   {
 	 speech ="padrino, bam bam, malavoglia"; 
-  }
-  if(richiesta =="padrino")
+  } else if(richiesta =="padrino")
   {
-	  speech ="Ristorante in centro, aperto a cena dalla 19:00 alle 23:00. Speciliatà di pesce di mare"; 
+	  speech ="Ristorante in centro, aperto a cena dalle 19:00 alle 23:00. Speciliatà di pesce di mare"; 
+  }else
+  {
+	  speech ="Mi dispiace non riesco a recuperare informazioni per quello che mi hai chiesto"; 
   }
   return res.json({
     speech: speech,
