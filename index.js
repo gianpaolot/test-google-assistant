@@ -29,7 +29,7 @@ restService.post("/echo", function(req, res) {
 	 speech ="padrino, bam bam, malavoglia"; 
   } else if(richiesta =="padrino")
   {
-	  speech ="Ristorante in centro, aperto a cena dalle 19:00 alle 23:00. Speciliatà di pesce di mare"; 
+	  speech ="Ristorante in centro, aperto a cena dalle 19:00 alle 23:00. Specialità di pesce di mare"; 
   }else
   {
 	  speech ="Mi dispiace non riesco a recuperare informazioni per quello che mi hai chiesto"; 
