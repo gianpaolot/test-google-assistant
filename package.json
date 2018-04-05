@@ -1,0 +1,14 @@
+{
+  "name": "webhook-test-gianpaolo",
+  "version": "1.0.0",
+  "description": "Webhook test gianpaolo",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "author": "Gianpaolo Todini",
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "express": "^4.13.4"
+  }
+}
